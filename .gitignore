@@ -21,6 +21,7 @@ env
 tmp
 src
 dst
+log
 
 # files
 *.tar
@@ -28,3 +29,6 @@ dst
 *.zip
 *.rar
 *.log
+*.pyc
+*.db
+*.sqlite3
