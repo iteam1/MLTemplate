@@ -1,6 +1,6 @@
 import logging
 
-def setup_logger(log_file='logfile.log'):
+def setup_logger(log_file='/home/gom/Workspace/MLTemplate/logfile.log'):
     # Create a logger
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)

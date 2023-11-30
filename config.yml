@@ -3,6 +3,7 @@ repository:
   id: 1
   name: MLTemplate
   description: A template repository for machine learning projects
+  fullpath: /home/gom/Workspace/MLTemplate
 
 # 2. Environment
 environment:
