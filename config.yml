@@ -1,0 +1,48 @@
+# 1. Repository configuration
+repository:
+  id: 1
+  name: MLTemplate
+  description: A template repository for machine learning projects
+
+# 2. Model architecture
+model:
+  type: neural_network
+  architecture: 
+    - type: dense
+      units: 128
+      activation: relu
+    - type: dropout
+      rate: 0.2
+    - type: dense
+      units: 64
+      activation: relu
+    - type: dense
+      units: 1
+      activation: sigmoid
+
+# 3. Training hyperparameters
+training:
+  batch_size: 64
+  epochs: 10
+  learning_rate: 0.001
+  loss_function: binary_crossentropy
+  optimizer: adam
+
+# 4. Data configuration
+data:
+  input_shape: (28, 28, 1)
+  num_classes: 1
+  train_data_path: /path/to/train_data
+  validation_data_path: /path/to/validation_data
+
+# 5. Callbacks
+callbacks:
+  - type: early_stopping
+    patience: 3
+  - type: model_checkpoint
+    filepath: /path/to/save/model_checkpoint.h5
+
+# 6. Additional configurations
+other_options:
+  use_gpu: true
+  random_seed: 42
