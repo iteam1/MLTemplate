@@ -4,10 +4,12 @@ repository:
   name: MLTemplate
   description: A template repository for machine learning projects
   fullpath: /home/gom/Workspace/MLTemplate
+  entry: /home/gom/miniconda3/envs/mltemplate/bin/python /home/gom/Workspace/MLTemplate/entry.py
 
 # 2. Environment
 environment:
-  env_path: null
+  env_path: /home/gom/miniconda3/envs/mltemplate
+  python_path: /home/gom/miniconda3/envs/mltemplate/bin/python
 
 # 3. Data configuration
 data:
