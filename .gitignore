@@ -14,14 +14,13 @@
 *.trt
 
 # folders
-__pycache__
 .ipynb_checkpoints
+__pycache__
 .vscode
 env
 tmp
 src
 dst
-log
 
 # files
 *.tar
