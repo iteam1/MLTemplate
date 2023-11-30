@@ -4,7 +4,18 @@ repository:
   name: MLTemplate
   description: A template repository for machine learning projects
 
-# 2. Model architecture
+# 2. Environment
+environment:
+  env_path: null
+
+# 3. Data configuration
+data:
+  input_shape: (28, 28, 1)
+  num_classes: 1
+  train_data_path: /path/to/train_data
+  validation_data_path: /path/to/validation_data
+
+# 4. Model architecture
 model:
   type: neural_network
   architecture: 
@@ -20,7 +31,7 @@ model:
       units: 1
       activation: sigmoid
 
-# 3. Training hyperparameters
+# 5. Training hyperparameters
 training:
   batch_size: 64
   epochs: 10
@@ -28,21 +39,14 @@ training:
   loss_function: binary_crossentropy
   optimizer: adam
 
-# 4. Data configuration
-data:
-  input_shape: (28, 28, 1)
-  num_classes: 1
-  train_data_path: /path/to/train_data
-  validation_data_path: /path/to/validation_data
-
-# 5. Callbacks
+# 6. Callbacks
 callbacks:
   - type: early_stopping
     patience: 3
   - type: model_checkpoint
     filepath: /path/to/save/model_checkpoint.h5
 
-# 6. Additional configurations
+# 7. Additional configurations
 other_options:
   use_gpu: true
   random_seed: 42
