@@ -1,0 +1,30 @@
+# models
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+*.ckpt.*
+*.pb
+*.pbtxt
+*.weights
+*.onnx
+*.tflite
+*.bin
+*.trt
+
+# folders
+__pycache__
+.ipynb_checkpoints
+.vscode
+env
+tmp
+src
+dst
+
+# files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.log
